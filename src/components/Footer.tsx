@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-950 text-white">
       <div className="container-main py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center font-bold text-white">СП</div>
@@ -35,10 +35,10 @@ export default function Footer() {
               Помогаю юным спортсменам раскрыть потенциал через работу с психологией. Индивидуальный подход к каждому ребёнку.
             </p>
             <div className="flex items-center gap-3 mt-6">
-              <a href="https://wa.me/79000000000" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 transition-colors flex items-center justify-center" title="WhatsApp">
+              <a href="https://wa.me/79000000000" target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-lg bg-white/5 hover:bg-white/10 transition-colors flex items-center justify-center" title="WhatsApp">
                 <span className="text-sm">WA</span>
               </a>
-              <a href="https://t.me/username" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-white/5 hover:bg-white/10 transition-colors flex items-center justify-center" title="Telegram">
+              <a href="https://t.me/username" target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-lg bg-white/5 hover:bg-white/10 transition-colors flex items-center justify-center" title="Telegram">
                 <span className="text-sm">TG</span>
               </a>
             </div>
@@ -49,12 +49,12 @@ export default function Footer() {
               <h4 className="font-heading font-semibold text-xs uppercase tracking-widest text-surface-400 mb-5">
                 {group.title}
               </h4>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col">
                 {group.links.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-sm text-surface-400 hover:text-white transition-colors inline-flex items-center gap-1 group"
+                      className="text-sm text-surface-400 hover:text-white transition-colors inline-flex items-center gap-1 group py-2 min-h-[36px]"
                     >
                       {link.label}
                       <ArrowUpRight size={12} className="opacity-0 -translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all" />
@@ -69,18 +69,18 @@ export default function Footer() {
             <h4 className="font-heading font-semibold text-xs uppercase tracking-widest text-surface-400 mb-5">
               Контакты
             </h4>
-            <ul className="flex flex-col gap-3 text-sm text-surface-400">
-              <li className="flex items-start gap-2">
+            <ul className="flex flex-col text-sm text-surface-400">
+              <li className="flex items-start gap-2 py-1.5 min-h-[36px]">
                 <span className="text-surface-500 shrink-0 mt-0.5">📍</span>
                 <span>г. Саратов / Онлайн</span>
               </li>
-              <li>
-                <a href="tel:+79000000000" className="hover:text-white transition-colors">
+              <li className="py-1.5 min-h-[36px]">
+                <a href="tel:+79000000000" className="hover:text-white transition-colors inline-flex items-center min-h-[36px]">
                   +7 (900) 000-00-00
                 </a>
               </li>
-              <li>
-                <a href="mailto:info@sport-psychologist.ru" className="hover:text-white transition-colors">
+              <li className="py-1.5 min-h-[36px]">
+                <a href="mailto:info@sport-psychologist.ru" className="hover:text-white transition-colors inline-flex items-center min-h-[36px]">
                   info@sport-psychologist.ru
                 </a>
               </li>

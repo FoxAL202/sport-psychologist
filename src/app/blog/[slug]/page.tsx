@@ -24,7 +24,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   if (!post) notFound();
 
   return (
-    <article className="py-16 md:py-24">
+    <article className="py-12 sm:py-16 lg:py-24">
       <div className="container-main max-w-3xl">
         <Link href="/blog" className="text-sm font-medium text-surface-400 hover:text-brand-700 mb-8 inline-flex items-center gap-1.5 transition-colors">
           <ArrowLeft size={14} />
@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 href={`https://vk.com/share.php?url=https://sport-psychologist.vercel.app/blog/${post.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-surface-100 hover:bg-surface-200 px-4 py-2 rounded-lg text-sm font-medium text-surface-600 transition-colors"
+                className="bg-surface-100 hover:bg-surface-200 px-5 py-3 rounded-lg text-sm font-medium text-surface-600 transition-colors min-h-[44px] inline-flex items-center"
               >
                 ВКонтакте
               </a>
@@ -73,7 +73,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 href={`https://t.me/share/url?url=https://sport-psychologist.vercel.app/blog/${post.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-surface-100 hover:bg-surface-200 px-4 py-2 rounded-lg text-sm font-medium text-surface-600 transition-colors"
+                className="bg-surface-100 hover:bg-surface-200 px-5 py-3 rounded-lg text-sm font-medium text-surface-600 transition-colors min-h-[44px] inline-flex items-center"
               >
                 Telegram
               </a>

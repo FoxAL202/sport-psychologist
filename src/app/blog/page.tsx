@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-16 sm:py-24 lg:py-32">
       <div className="container-main">
         <div className="max-w-2xl mb-16">
           <span className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-4 block">

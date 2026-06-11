@@ -24,7 +24,7 @@ export default async function SportPage({ params }: { params: Promise<{ sport: s
   if (!service) notFound();
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-16 sm:py-20 lg:py-28">
       <div className="container-main">
         <Link
           href="/uslugi"
@@ -34,7 +34,7 @@ export default async function SportPage({ params }: { params: Promise<{ sport: s
           Все направления
         </Link>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14 mt-4">
           <div className="lg:col-span-2">
             <div className="text-5xl mb-5">{service.icon}</div>
             <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-brand-900 mb-6 leading-tight">

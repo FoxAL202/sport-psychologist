@@ -11,9 +11,9 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 text-white">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-accent-500/10 rounded-full blur-[120px]" />
-          <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-brand-400/10 rounded-full blur-[150px]" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-600/5 rounded-full blur-[200px]" />
+          <div className="absolute -top-40 -right-40 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-accent-500/10 rounded-full blur-[80px] sm:blur-[120px]" />
+          <div className="absolute -bottom-40 -left-40 w-[350px] sm:w-[600px] h-[350px] sm:h-[600px] bg-brand-400/10 rounded-full blur-[100px] sm:blur-[150px]" />
+          <div className="hidden sm:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-600/5 rounded-full blur-[200px]" />
         </div>
         <div className="container-main relative pt-20 pb-24 md:pt-28 md:pb-32">
           <div className="max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
@@ -65,7 +65,7 @@ export default function HomePage() {
       </section>
 
       {/* Проблемы */}
-      <section className="py-24 md:py-32 bg-surface-50">
+      <section className="py-16 sm:py-24 lg:py-32 bg-surface-50">
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-4 block">
@@ -91,7 +91,7 @@ export default function HomePage() {
       </section>
 
       {/* Услуги */}
-      <section className="py-24 md:py-32" id="uslugi">
+      <section className="py-16 sm:py-24 lg:py-32" id="uslugi">
         <div className="container-main">
           <div className="flex flex-col lg:flex-row items-end justify-between gap-8 mb-16">
             <div className="max-w-xl">
@@ -134,7 +134,7 @@ export default function HomePage() {
       </section>
 
       {/* О себе */}
-      <section className="py-24 md:py-32">
+      <section className="py-16 sm:py-24 lg:py-32">
         <div className="container-main">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -156,7 +156,7 @@ export default function HomePage() {
                   как силу, а не как помеху.
                 </p>
               </div>
-              <div className="grid grid-cols-3 gap-8 mt-10 p-8 bg-surface-50 rounded-2xl">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-8 mt-10 p-5 sm:p-8 bg-surface-50 rounded-2xl">
                 {[
                   { num: "8+", label: "лет опыта", desc: "непрерывной практики" },
                   { num: "300+", label: "детей", desc: "которым помогла" },
@@ -179,7 +179,7 @@ export default function HomePage() {
                   <p className="text-brand-600 font-medium text-sm">[Ваше фото]</p>
                 </div>
               </div>
-              <div className="absolute -bottom-5 -right-5 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl p-7 shadow-xl max-w-[220px]">
+              <div className="absolute -bottom-5 right-0 sm:-right-5 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl p-5 sm:p-7 shadow-xl max-w-[180px] sm:max-w-[220px]">
                 <div className="font-heading text-xl font-bold text-white mb-1">Бесплатно</div>
                 <div className="text-sm text-white/80">20-минутная консультация-знакомство</div>
               </div>
@@ -189,7 +189,7 @@ export default function HomePage() {
       </section>
 
       {/* Методы */}
-      <section className="py-24 md:py-32 bg-surface-50" id="metody">
+      <section className="py-16 sm:py-24 lg:py-32 bg-surface-50" id="metody">
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-4 block">
@@ -214,7 +214,7 @@ export default function HomePage() {
       </section>
 
       {/* Отзывы */}
-      <section className="py-24 md:py-32" id="otzyvy">
+      <section className="py-16 sm:py-24 lg:py-32" id="otzyvy">
         <div className="container-main">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-4 block">
@@ -236,7 +236,7 @@ export default function HomePage() {
       </section>
 
       {/* Блог */}
-      <section className="py-24 md:py-32 bg-surface-50" id="blog">
+      <section className="py-16 sm:py-24 lg:py-32 bg-surface-50" id="blog">
         <div className="container-main">
           <div className="flex flex-col lg:flex-row items-end justify-between gap-6 mb-16">
             <div className="max-w-xl">
@@ -271,7 +271,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden py-24 md:py-32">
+      <section className="relative overflow-hidden py-16 sm:py-24 lg:py-32">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-900 via-brand-950 to-brand-900" />
         <div className="absolute inset-0">
           <div className="absolute top-10 right-10 w-[300px] h-[300px] bg-accent-500/10 rounded-full blur-[100px]" />

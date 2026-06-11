@@ -55,42 +55,49 @@ export default function Header() {
           </Link>
         </nav>
 
-        <button className="md:hidden p-2.5 rounded-lg hover:bg-surface-50 transition-colors" onClick={() => setOpen(!open)}>
+        <button
+          className="md:hidden p-3 rounded-lg hover:bg-surface-50 transition-colors"
+          onClick={() => setOpen(!open)}
+          aria-label={open ? "Закрыть меню" : "Открыть меню"}
+          aria-expanded={open}
+        >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
-      {open && (
-        <div className="md:hidden border-t border-surface-100 bg-white shadow-lg">
-          <div className="container-main py-5 flex flex-col gap-1">
-            {links.map((link) => {
-              const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium ${
-                    isActive
-                      ? "bg-brand-50 text-brand-800"
-                      : "text-surface-600 hover:bg-surface-50"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
+      <div
+        className={`md:hidden border-t border-surface-100 bg-white shadow-lg transition-all duration-300 ${
+          open ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+        }`}
+      >
+        <div className="container-main py-5 flex flex-col gap-1">
+          {links.map((link) => {
+            const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className={`px-4 py-3.5 rounded-lg text-sm font-medium min-h-[44px] flex items-center ${
+                  isActive
+                    ? "bg-brand-50 text-brand-800"
+                    : "text-surface-600 hover:bg-surface-50"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
             <hr className="my-2 border-surface-100" />
             <Link
               href="/kontakty"
               onClick={() => setOpen(false)}
-              className="bg-brand-800 text-white px-5 py-3.5 rounded-xl text-sm font-semibold text-center hover:bg-brand-900 transition-colors"
+              className="bg-brand-800 text-white px-5 py-4 rounded-xl text-sm font-semibold text-center hover:bg-brand-900 transition-colors min-h-[44px] flex items-center justify-center"
             >
               Записаться на консультацию
             </Link>
           </div>
         </div>
-      )}
     </header>
   );
 }

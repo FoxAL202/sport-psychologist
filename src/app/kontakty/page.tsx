@@ -29,7 +29,7 @@ const contacts = [
 
 export default function KontaktyPage() {
   return (
-    <section className="py-24 md:py-32">
+    <section className="py-16 sm:py-24 lg:py-32">
       <div className="container-main">
         <div className="max-w-2xl mb-16">
           <span className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-4 block">
@@ -54,7 +54,7 @@ export default function KontaktyPage() {
                 <label className="block text-sm font-medium text-surface-700 mb-1.5">Ваше имя</label>
                 <input
                   type="text"
-                  className="w-full border border-surface-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50"
+                  className="w-full border border-surface-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50 min-h-[44px]"
                   placeholder="Как к вам обращаться?"
                 />
               </div>
@@ -62,7 +62,7 @@ export default function KontaktyPage() {
                 <label className="block text-sm font-medium text-surface-700 mb-1.5">Телефон</label>
                 <input
                   type="tel"
-                  className="w-full border border-surface-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50"
+                  className="w-full border border-surface-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50 min-h-[44px]"
                   placeholder="+7 (___) ___-__-__"
                 />
               </div>
@@ -70,13 +70,13 @@ export default function KontaktyPage() {
                 <label className="block text-sm font-medium text-surface-700 mb-1.5">Email</label>
                 <input
                   type="email"
-                  className="w-full border border-surface-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50"
+                  className="w-full border border-surface-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50 min-h-[44px]"
                   placeholder="email@example.com"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-surface-700 mb-1.5">Вид спорта</label>
-                <select className="w-full border border-surface-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50">
+                <select className="w-full border border-surface-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50 min-h-[44px]">
                   <option value="">Выберите...</option>
                   <option value="hokkey">Хоккей</option>
                   <option value="futbol">Футбол</option>
@@ -89,13 +89,13 @@ export default function KontaktyPage() {
                 <label className="block text-sm font-medium text-surface-700 mb-1.5">Кратко опишите запрос</label>
                 <textarea
                   rows={4}
-                  className="w-full border border-surface-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50 resize-none"
+                  className="w-full border border-surface-200 rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-shadow bg-surface-50 resize-none min-h-[44px]"
                   placeholder="Что беспокоит? Как давно? Возраст ребёнка..."
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-brand-800 to-brand-900 text-white py-3.5 rounded-xl font-semibold hover:from-brand-900 hover:to-brand-950 transition-all shadow-sm"
+                className="w-full bg-gradient-to-r from-brand-800 to-brand-900 text-white py-4 rounded-xl font-semibold hover:from-brand-900 hover:to-brand-950 transition-all shadow-sm min-h-[48px]"
               >
                 Отправить заявку
               </button>
@@ -141,7 +141,7 @@ export default function KontaktyPage() {
                   href="https://calendly.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-brand-800 to-brand-900 text-white py-3.5 rounded-xl font-semibold hover:from-brand-900 hover:to-brand-950 transition-all shadow-sm"
+                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-brand-800 to-brand-900 text-white py-4 rounded-xl font-semibold hover:from-brand-900 hover:to-brand-950 transition-all shadow-sm min-h-[48px]"
                 >
                   <Calendar size={18} />
                   Выбрать время в календаре
@@ -150,7 +150,7 @@ export default function KontaktyPage() {
                   href="https://wa.me/79000000000"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-green-700 text-white py-3.5 rounded-xl font-semibold hover:from-green-700 hover:to-green-800 transition-all shadow-sm"
+                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-600 to-green-700 text-white py-4 rounded-xl font-semibold hover:from-green-700 hover:to-green-800 transition-all shadow-sm min-h-[48px]"
                 >
                   <MessageCircle size={18} />
                   Написать в WhatsApp

@@ -26,9 +26,9 @@ const principles = [
 export default function ONasPage() {
   return (
     <>
-      <section className="py-24 md:py-32">
+      <section className="py-16 sm:py-24 lg:py-32">
         <div className="container-main">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-14 items-start mb-24">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 items-start mb-16 sm:mb-24">
             <div className="lg:col-span-2">
               <div className="aspect-[4/5] rounded-3xl bg-gradient-to-br from-brand-100 via-brand-50 to-brand-200 border border-brand-200 flex items-center justify-center shadow-lg">
                 <div className="text-center p-10">
@@ -64,7 +64,7 @@ export default function ONasPage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-3 gap-8 mt-10 p-8 bg-surface-50 rounded-2xl max-w-lg">
+              <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-10 p-5 sm:p-8 bg-surface-50 rounded-2xl max-w-lg">
                 {[
                   { num: "8+", label: "лет опыта" },
                   { num: "300+", label: "детей" },
@@ -127,7 +127,7 @@ export default function ONasPage() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden py-20 md:py-28 bg-gradient-to-br from-brand-900 to-brand-950 text-white">
+      <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28 bg-gradient-to-br from-brand-900 to-brand-950 text-white">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-accent-500/10 rounded-full blur-[100px]" />
         </div>
