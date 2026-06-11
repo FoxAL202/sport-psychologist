@@ -62,7 +62,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <p className="text-sm text-surface-400">Понравилась статья? Поделитесь:</p>
             <div className="flex gap-2">
               <a
-                href={`https://vk.com/share.php?url=https://sport-psychologist.ru/blog/${post.slug}`}
+                href={`https://vk.com/share.php?url=https://sport-psychologist.vercel.app/blog/${post.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-surface-100 hover:bg-surface-200 px-4 py-2 rounded-lg text-sm font-medium text-surface-600 transition-colors"
@@ -70,7 +70,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 ВКонтакте
               </a>
               <a
-                href={`https://t.me/share/url?url=https://sport-psychologist.ru/blog/${post.slug}`}
+                href={`https://t.me/share/url?url=https://sport-psychologist.vercel.app/blog/${post.slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-surface-100 hover:bg-surface-200 px-4 py-2 rounded-lg text-sm font-medium text-surface-600 transition-colors"
