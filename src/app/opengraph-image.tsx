@@ -99,10 +99,13 @@ export default function OGImage() {
             gap: "24px",
           }}
         >
-          <span style={{ color: "#f59e0b", fontSize: "20px" }}>✦ Хоккей</span>
-          <span style={{ color: "#f59e0b", fontSize: "20px" }}>✦ Футбол</span>
-          <span style={{ color: "#f59e0b", fontSize: "20px" }}>✦ Теннис</span>
-          <span style={{ color: "#f59e0b", fontSize: "20px" }}>✦ Гимнастика</span>
+          <span style={{ color: "#f59e0b", fontSize: "20px" }}>Хоккей</span>
+          <span style={{ color: "#64748b", fontSize: "20px" }}>·</span>
+          <span style={{ color: "#f59e0b", fontSize: "20px" }}>Футбол</span>
+          <span style={{ color: "#64748b", fontSize: "20px" }}>·</span>
+          <span style={{ color: "#f59e0b", fontSize: "20px" }}>Теннис</span>
+          <span style={{ color: "#64748b", fontSize: "20px" }}>·</span>
+          <span style={{ color: "#f59e0b", fontSize: "20px" }}>Гимнастика</span>
         </div>
       </div>
     ),
